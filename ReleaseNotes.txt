@@ -1,0 +1,26 @@
+*******************************************************************************
+*                                 Mega USSD                                   *
+*******************************************************************************
+     (c) Hodin Vasily, 2011
+
+Widgets for quick USSD request:
+ - Priorbank card balance
+ - MTS balanse, pre-pay, and other USSD services
+ - Life balance and other USSD service
+ etc.
+
+--------------------------------------------------------------------------------
+Version         :      0.5.1
+Release date    : */May/2011 
+--------------------------------------------------------------------------------
+New features:
+    - Main screen. Add cards, set name for card
+	- Priorbank widget. Show card list. Card list can be edited in main app 
+	  screen
+	- MTS widget. Balance, Pre-payed 1000, Other USSD commands (with no params)
+	- Life widget. Balance. Other USSD commands (with no params)  
+
+Fixed:
+
+
+********************************************************************************
