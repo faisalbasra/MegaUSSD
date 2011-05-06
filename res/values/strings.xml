@@ -5,4 +5,10 @@
     <string name="card_widget_name">Баланс \"Приорбанк\"</string>
     <string name="card_widget_title">Приорбанк</string>
     <string name="card_dlg_title">Выберите карту</string>
+    <string name="life_widget_name">USSD Life:)</string>
+    <string name="life_widget_title">Life:)</string>
+    <string name="mts_widget_name">USSD MTC</string>
+    <string name="mts_widget_title">MTC</string>
+    <string name="life_dlg_name">USSD запросы Life:)</string>
+    <string name="mts_dlg_name">USSD запросы МТС</string>
 </resources>

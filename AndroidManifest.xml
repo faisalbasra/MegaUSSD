@@ -13,14 +13,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SelectCard" android:theme="@android:style/Theme.Dialog" android:icon="@drawable/prior"
-                  android:label="@string/card_dlg_title"></activity>        
-		<receiver android:name="PriorClick" android:label="@string/card_widget_name" android:icon="@drawable/prior">
+        <activity android:theme="@android:style/Theme.Dialog" android:icon="@drawable/prior"
+                  android:label="@string/card_dlg_title" android:name=".prior.PriorDlg"></activity>     
+        <activity android:theme="@android:style/Theme.Dialog" android:icon="@drawable/life" android:label="@string/life_dlg_name" android:name=".life.LifeDlg"></activity>     
+        <activity android:theme="@android:style/Theme.Dialog" android:icon="@drawable/mts" android:label="@string/mts_dlg_name" android:name=".mts.MtsDlg"></activity>                                           
+		<receiver android:label="@string/card_widget_name" android:icon="@drawable/prior" android:name=".prior.PriorReceiver">
     		<intent-filter>
         		<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 	    	</intent-filter>
     		<meta-data android:name="android.appwidget.provider"
                android:resource="@xml/prior_card" />
 		</receiver>
+		<receiver android:label="@string/mts_widget_name" android:icon="@drawable/mts" android:name=".mts.MtsReceiver">
+    		<intent-filter>
+        		<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	    	</intent-filter>
+    		<meta-data android:name="android.appwidget.provider"
+               android:resource="@xml/mts" />
+		</receiver>
+		<receiver android:label="@string/life_widget_name" android:icon="@drawable/life" android:name=".life.LifeReceiver">
+    		<intent-filter>
+        		<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	    	</intent-filter>
+    		<meta-data android:name="android.appwidget.provider"
+               android:resource="@xml/life" />
+		</receiver>				
+		
     </application>
 </manifest>
